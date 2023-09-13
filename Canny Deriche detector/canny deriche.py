@@ -6,7 +6,7 @@ def convolution_smoothing(img, kernel_size=3, sigma=1):
     img = img.astype(float)
     smoothed_img = np.zeros((rows, cols), dtype=float)
 
-    # Generate a Gaussian kernel with the given kernel size and sigma
+    # Generate a Gaussian kernel with the given kernel size & sigma
     kernel = np.zeros((kernel_size, kernel_size), dtype=float)
     for i in range(-kernel_size//2, kernel_size//2+1):
         for j in range(-kernel_size//2, kernel_size//2+1):
